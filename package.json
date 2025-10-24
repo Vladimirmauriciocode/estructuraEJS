@@ -1,0 +1,38 @@
+{
+  "name": "ejs_struct",
+  "version": "1.0.0",
+  "description": "Base structure of a project to develop with ejs. Distribution of folders, base files among others",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "build": "node tools/build.js",
+    "deploy:gh": "npm run build && npx gh-pages -d dist",
+    "vercel-build": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diego40g/EJS_Struct.git"
+  },
+  "keywords": [
+    "node",
+    "ejs",
+    "express",
+    "base"
+  ],
+  "author": "Diego Ignacio Paz Naula",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/diego40g/EJS_Struct/issues"
+  },
+  "homepage": "https://github.com/diego40g/EJS_Struct#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
